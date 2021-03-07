@@ -9,6 +9,9 @@ CFLAGS =-Wall -Wextra -Wpedantic \
 BIN_PATH := bin
 SRC_PATH := src
 
+# make output directory
+$(info $(shell mkdir -p $(BIN_PATH)))
+
 # compile
 memloader: $(SRC_PATH)/memelf.c 
 	$(CC) -o $(BIN_PATH)/memloader $(SRC_PATH)/memelf.c
