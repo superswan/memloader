@@ -1,7 +1,11 @@
 # memloader
 Load file to memory and execute using anonymous file descriptor
 
-# Installtion
+This repo contains source for two binaries. `memloader` will load and execute a local binary to memory. `memloadern` will download a binary using curl directly to memory and execute. 
+
+Requires libcurl
+
+# Installation
 memloader: 
 ```make``` 
 
