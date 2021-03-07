@@ -20,4 +20,4 @@ memloadern:
 ```
 
 # More info
-An anonymous file descriptor is created in memory using `memfd_create()`. The file can be executed in the first stage while the file descriptor is still open by accessing /proc/<PID>/fd/<FD>. Pressing `return` will execute the file and close file descriptor. The second argument to the `execl(2)` will determine the process name. 
+An anonymous file descriptor is created in memory using `memfd_create()`. The file can be executed in the first stage while the file descriptor is still open by accessing `/proc/<PID>/fd/<FD>`. Pressing `return` will execute the file and close file descriptor. The second argument to the `execl(2)` function will determine the process name. 
